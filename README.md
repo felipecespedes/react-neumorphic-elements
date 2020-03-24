@@ -6,8 +6,16 @@
 
 ## Install
 
+### npm
+
 ```bash
 npm install --save react-neumorphic-elements
+```
+
+### yarn
+
+```bash
+yarn add react-neumorphic-elements
 ```
 
 ## Usage

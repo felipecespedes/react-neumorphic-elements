@@ -9,7 +9,7 @@ const NeumorphicSearch = (props) => {
 
   return (
     <div className={classes.join(' ')}>
-      <FontAwesomeIcon icon='search' color='#8A92A5' />
+      <FontAwesomeIcon icon='search' color='#8A92A5' size='xs' />
       <input
         type='text'
         placeholder={placeholder || 'Search'}

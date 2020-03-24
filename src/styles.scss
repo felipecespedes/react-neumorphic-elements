@@ -7,14 +7,14 @@
   color: #8A92A5;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2),
-              -3px -3px 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .2),
+              -3px -3px 5px rgba(255, 255, 255, .3);
   outline: none;
   margin: 5px;
 
   &__is-active {
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .2),
-                inset -3px -3px 5px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .2),
+                inset -3px -3px 5px rgba(255, 255, 255, .3);
   }
 
   &__button {
@@ -28,11 +28,15 @@
   }
 
   &__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     @extend .neumorphic__is-active;
   }
 
   &__search-input {
     border: none;
+    background-color: transparent;
     margin: 0 0 0 5px;
     font-family: inherit;
     outline: none;
