@@ -15,12 +15,13 @@ npm install --save react-neumorphic-elements
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-neumorphic-elements'
+import { NeumorphicButton, NeumorphicSearch } from 'react-neumorphic-elements'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <NeumorphicButton />
+      <NeumorphicSearch />
     )
   }
 }

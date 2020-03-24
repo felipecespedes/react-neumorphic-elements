@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.neumorphic {
+  background-color: inherit;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: #8A92A5;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2),
+              -3px -3px 5px rgba(255, 255, 255, 0.8);
+  outline: none;
+  margin: 5px;
+
+  &__is-active {
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .2),
+                inset -3px -3px 5px rgba(255, 255, 255, 0.8);
+  }
+
+  &__button {
+    &:active {
+      @extend .neumorphic__is-active;
+    }
+  }
+
+  &__button-round {
+    border-radius: 50%;
+  }
+
+  &__input {
+    @extend .neumorphic__is-active;
+  }
+
+  &__search-input {
+    border: none;
+    margin: 0 0 0 5px;
+    font-family: inherit;
+    outline: none;
+    color: inherit;
+  }
+}

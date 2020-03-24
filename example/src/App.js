@@ -1,12 +1,23 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-neumorphic-elements'
+import {
+  NeumorphicButton,
+  NeumorphicInput,
+  NeumorphicSearch,
+  NeumorphicRoundButton,
+} from 'react-neumorphic-elements'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <NeumorphicButton>
+          Hello
+        </NeumorphicButton>
+        <NeumorphicRoundButton size={50}>X</NeumorphicRoundButton>
+        <NeumorphicRoundButton isActive={true} size={50}>X</NeumorphicRoundButton>
+        <NeumorphicInput />
+        <NeumorphicSearch />
       </div>
     )
   }

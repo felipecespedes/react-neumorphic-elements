@@ -1,22 +1,13 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import NmrphcButton from './button/Button'
+import NmrphcInput from './input/Input'
+import NmrphcSearch from './search/Search'
+import NmrphcRoundButton from './round-button/RoundButton'
 
-import styles from './styles.css'
+library.add(faSearch)
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export const NeumorphicButton = NmrphcButton
+export const NeumorphicInput = NmrphcInput
+export const NeumorphicSearch = NmrphcSearch
+export const NeumorphicRoundButton = NmrphcRoundButton
