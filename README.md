@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-neumorphic-elements.svg)](https://www.npmjs.com/package/react-neumorphic-elements) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+Inspired by [Neumorphism in user interfaces](https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6)
+
 ## Install
 
 ### npm
