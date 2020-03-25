@@ -33,7 +33,10 @@ export default class App extends Component {
     return (
       <div className='app'>
         <div className='search-container'>
-          <NeumorphicSearch onValueChange={this.handleSearchValueChanged} />
+          <NeumorphicSearch
+            placeholder='What pokemon are you searching for?'
+            onValueChange={this.handleSearchValueChanged}
+          />
         </div>
         <div className='pokemon-list'>
           { filteredPokemons.map(this.renderPokemon.bind(this)) }
@@ -95,7 +98,7 @@ export default class App extends Component {
     let filteredPokemons = pokemons
     if (searchTerm != null && searchTerm !== '') {
       filteredPokemons = pokemons.filter(pokemon => {
-        return pokemon.name.includes(searchTerm)
+        return pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
       })
     }
     this.setState({ filteredPokemons })
