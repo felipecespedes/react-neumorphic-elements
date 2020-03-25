@@ -18,6 +18,10 @@ npm install --save react-neumorphic-elements
 yarn add react-neumorphic-elements
 ```
 
+## Demo
+
+See the [working Demo here](https://felipecespedes.github.io/react-neumorphic-elements/)
+
 ## Usage
 
 ```jsx

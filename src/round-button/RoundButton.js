@@ -2,10 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from '../styles.scss'
 import NeumorphicButton from '../button/Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const NeumorphicRoundButton = (props) => {
-  const { children } = props
+  const { children, icon, onClick, iconColor, iconSize, link } = props
   let size = props.size || 50
+  let content = children
+  if (icon) {
+    content = <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} />
+  }
 
   return (
     <NeumorphicButton
@@ -16,8 +21,10 @@ const NeumorphicRoundButton = (props) => {
         width: size,
         ...props.style || {}
       }}
+      link={link}
+      onClick={onClick}
     >
-      { children }
+      { content }
     </NeumorphicButton>
   )
 }
@@ -27,7 +34,12 @@ NeumorphicRoundButton.propTypes = {
   className: PropTypes.string,
   isActive: PropTypes.bool,
   size: PropTypes.number,
-  style: PropTypes.object
+  style: PropTypes.object,
+  icon: PropTypes.any, // TODO it should be a shape https://github.com/FortAwesome/react-fontawesome
+  onClick: PropTypes.func,
+  iconColor: PropTypes.string,
+  iconSize: PropTypes.string,
+  link: PropTypes.string
 }
 
 export default NeumorphicRoundButton

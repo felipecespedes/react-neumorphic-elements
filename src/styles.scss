@@ -18,6 +18,9 @@
   }
 
   &__button {
+    cursor: pointer;
+    padding: 0;
+
     &:active {
       @extend .neumorphic__is-active;
     }
@@ -25,6 +28,15 @@
 
   &__button-round {
     border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:active {
+      @extend .neumorphic__is-active;
+    }
   }
 
   &__input {
@@ -41,5 +53,38 @@
     font-family: inherit;
     outline: none;
     color: inherit;
+    flex: 1;
+
+    &::placeholder {
+      color: #8A92A5;
+    }
   }
+
+  &__icon {
+    border-radius: 50%;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+  }
+
+  &__item-content-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__item-title {
+    font-weight: bold;
+    margin: 0 0 0 10px;
+  }
+
+  &__item-content {
+    margin: 0 0 0 10px;
+  }
+
 }
