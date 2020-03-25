@@ -20,7 +20,7 @@ yarn add react-neumorphic-elements
 
 ## Demo
 
-See the [working Demo here](https://felipecespedes.github.io/react-neumorphic-elements/)
+See a [working demo here](https://felipecespedes.github.io/react-neumorphic-elements/)
 
 ## Usage
 
